@@ -7,8 +7,8 @@ import com.google.android.flexbox.FlexDirection
 import com.google.android.flexbox.FlexboxLayoutManager
 import com.google.android.flexbox.JustifyContent
 import com.squareup.picasso.Picasso
-import com.test.test_app.adapter.ListAdapter
 import com.test.test_app.R
+import com.test.test_app.adapter.ListAdapter
 import com.test.test_app.model.Tags
 import jp.wasabeef.picasso.transformations.BlurTransformation
 import jp.wasabeef.picasso.transformations.CropCircleTransformation
@@ -62,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             .load("https://picsum.photos/400")
             .transform(CropCircleTransformation())
             .into(profile_iv)
-        name_tv.text = getString(R.string.john_doe) +" " + getRandom(1, 100)
+        name_tv.text = getString(R.string.john_doe) + " " + getRandom(1, 100)
         profile_pb.setProgress(getRandom(1, 100).toFloat())
     }
 

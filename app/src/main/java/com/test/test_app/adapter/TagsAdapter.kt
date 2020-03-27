@@ -3,7 +3,6 @@ package com.test.test_app.adapter
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.emoji.text.EmojiCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.test.test_app.R
 import com.test.test_app.model.Tags
@@ -39,7 +38,7 @@ class MovieViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
     }
 
     fun bind(tag: Tags) {
-        mTitleView?.text = EmojiCompat.get().process(tag.emoji + "  " + tag.title)
+        mTitleView?.text = tag.emoji + "  " + tag.title
     }
 
 }
